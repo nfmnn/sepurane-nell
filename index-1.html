@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Untuk Queen Nella 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffe3ee;--pink:#ff7eb6;--deep:#d6336c;--cream:#fff8fb;--lilac:#c9b6ff;--ink:#5a2a42;--butter:#ffe28a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%}
+body{font-family:'Baloo 2','Nunito',system-ui,sans-serif;color:var(--ink);background:var(--bg);background-image:radial-gradient(circle at 20% 10%,#fff 0 6%,transparent 7%),radial-gradient(circle at 80% 30%,#ffd0e4 0 8%,transparent 9%),radial-gradient(circle at 30% 80%,#e9ddff 0 9%,transparent 10%);overflow-x:hidden;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.fl{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.fl span{position:absolute;bottom:-40px;animation:up linear infinite;opacity:.7}
+@keyframes up{to{transform:translateY(-115vh) rotate(25deg)}}
+.screen{position:relative;z-index:1;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 18px;text-align:center}
+.hide{display:none!important}
+.script{font-family:'Pacifico',cursive;color:var(--deep)}
+/* loading */
+.bear{font-size:76px;animation:bounce .8s ease-in-out infinite}
+@keyframes bounce{50%{transform:translateY(-18px) rotate(-6deg)}}
+.bar{width:min(260px,70vw);height:16px;border-radius:99px;background:#fff;border:3px solid var(--pink);margin:18px 0 10px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(45deg,var(--pink) 0 10px,#ff9cc8 10px 20px);transition:width .3s}
+/* envelope */
+.env{position:relative;width:min(300px,78vw);height:min(205px,53vw);margin:34px auto 18px;cursor:pointer;animation:sway 3s ease-in-out infinite;border:0;background:none;font:inherit}
+@keyframes sway{50%{transform:rotate(2.5deg) translateY(-6px)}}
+.env .back{position:absolute;inset:0;background:#ffb3d1;border-radius:14px;box-shadow:0 10px 0 #f08ab4}
+.env .pocket{position:absolute;inset:0;border-radius:14px;background:linear-gradient(135deg,#ffc9de 50%,transparent 50%),linear-gradient(225deg,#ffc9de 50%,transparent 50%);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}
+.env .pocket::after{content:"";position:absolute;inset:0;background:#ffd3e4;clip-path:polygon(0 100%,0 18%,50% 62%,100% 18%,100% 100%)}
+.env .flap{position:absolute;left:0;right:0;top:0;height:62%;background:#ff9cc8;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .7s,z-index 0s .35s;z-index:3;border-radius:14px 14px 0 0}
+.env.open .flap{transform:rotateX(180deg);z-index:0;background:#ffc9de}
+.env .seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-30%);font-size:40px;z-index:4;transition:opacity .3s;filter:drop-shadow(0 3px 0 #b3245a55)}
+.env.open .seal{opacity:0}
+.env .deco{position:absolute;font-size:24px;z-index:5;animation:bounce 1.6s ease-in-out infinite}
+.hint{font-size:19px;font-weight:700;color:var(--deep)}
+h1{font-size:clamp(26px,7vw,36px);line-height:1.2}
+/* letter */
+.wrap{position:relative;z-index:1;width:min(560px,100%);margin:0 auto;padding:28px 16px 70px;text-align:center}
+.paper{background:var(--cream);border:3px dashed var(--pink);border-radius:26px;padding:26px 22px;margin:18px 0;box-shadow:0 8px 0 #ffc2da;text-align:left;font-size:18px;line-height:1.6}
+.paper.rise{animation:pop .6s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:translateY(40px) scale(.9);opacity:0}}
+.paper p+p{margin-top:12px}
+.paper.mine{background:#fff;border-color:var(--lilac);box-shadow:0 8px 0 #ddd0ff}
+.tag{display:inline-block;background:var(--butter);padding:2px 14px;border-radius:99px;font-weight:700;font-size:15px;margin-bottom:10px;transform:rotate(-3deg)}
+.name{font-weight:700;color:var(--deep)}
+.sec{opacity:0;transform:translateY(24px);transition:.6s}
+.sec.in{opacity:1;transform:none}
+.proms{display:grid;gap:12px;margin-top:14px}
+.prom{width:100%;font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:#fff;border:3px solid var(--pink);border-radius:20px;padding:12px 14px;cursor:pointer;text-align:left;box-shadow:0 5px 0 #ffb0d0;transition:transform .15s}
+.prom:active{transform:translateY(4px);box-shadow:0 1px 0 #ffb0d0}
+.prom small{display:block;font-weight:500;font-size:16px;margin-top:6px;max-height:0;overflow:hidden;opacity:0;transition:.4s}
+.prom.on small{max-height:120px;opacity:1}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:16px}
+.btn{font:inherit;font-size:18px;font-weight:700;border:0;border-radius:99px;padding:12px 22px;cursor:pointer;color:#fff;background:var(--deep);box-shadow:0 5px 0 #9c1d4c}
+.btn.soft{background:#fff;color:var(--deep);border:3px solid var(--lilac);box-shadow:0 5px 0 #ddd0ff}
+.btn:active{transform:translateY(4px);box-shadow:none}
+.reply{margin-top:18px;font-size:19px;font-weight:600;min-height:30px}
+.sign{margin-top:8px;font-size:22px}
+.pop{position:fixed;z-index:9;pointer-events:none;font-size:28px;animation:pf 1.1s ease-out forwards}
+@keyframes pf{to{transform:translate(var(--x),-130px) scale(1.3);opacity:0}}
+button:focus-visible{outline:4px solid var(--lilac);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.sec{opacity:1;transform:none}}
+@media (prefers-color-scheme:dark){:root{--bg:#ffe3ee}}
+</style>
+</head>
+<body>
+<div class="fl" id="fl" aria-hidden="true"></div>
+
+<!-- 1. LOADING -->
+<section class="screen" id="loading">
+  <div class="bear">🧸</div>
+  <h1 class="script">Sebentar ya...</h1>
+  <div class="bar"><i id="fill"></i></div>
+  <p id="ltxt">Lagi nyiapin sesuatu buat Queen Nella 🎀</p>
+</section>
+
+<!-- 2. AMPLOP -->
+<section class="screen hide" id="envScreen">
+  <p class="script" style="font-size:26px">Untuk Queen Nella 👑</p>
+  <button class="env" id="env" aria-label="Buka amplop">
+    <div class="back"></div>
+    <div class="pocket"></div>
+    <div class="flap"></div>
+    <div class="seal">💗</div>
+    <span class="deco" style="left:-14px;top:-18px">🌸</span>
+    <span class="deco" style="right:-12px;top:-10px;animation-delay:.4s">⭐</span>
+    <span class="deco" style="left:-10px;bottom:-14px;animation-delay:.8s">🎀</span>
+    <span class="deco" style="right:-14px;bottom:-12px;animation-delay:.2s">🌷</span>
+  </button>
+  <p class="hint">Tap amplopnya ya, Queen Nella 💌</p>
+</section>
+
+<!-- 3. SURAT -->
+<main class="wrap hide" id="letter">
+  <p class="script" style="font-size:34px">Queen Nella 👑</p>
+  <p style="font-weight:600">ada yang mau minta maaf nih...</p>
+
+  <div class="paper rise">
+    <span class="tag">🥺 dari hati</span>
+    <p>sepurane yo nel nek aku mau nggae fotomu gae sw tapi gak kondo, emboh lapo, koyok aku gemes ngono, dan aku pun mikir koyok cek opo seh yo arek arek iki nyontoh, gak eman ta ambek masa depane, tapi pas iku mboh aku koyok sok dewasa ngono, sepurane</p>
+  </div>
+
+  <div class="paper mine sec">
+    <span class="tag">💬 sambungan</span>
+    <p>Queen Nella, foto itu milik Queen Nella. Mau dipajang atau enggak, itu hak Queen Nella sepenuhnya. Seharusnya aku izin dulu, dan aku gak melakukannya. Itu salahku.</p>
+    <p>Aku sadar Queen Nella mungkin jadi kaget, gak nyaman, atau malu karena fotonya muncul tanpa Queen Nella tau. Perasaan itu wajar banget, dan aku gak mau menganggapnya sepele.</p>
+    <p>Aku juga gak mau bikin alasan. Aku cuma mau bilang dengan jujur: aku salah, dan aku menyesal.</p>
+  </div>
+
+  <div class="paper sec">
+    <span class="tag">🤝 janji kecil</span>
+    <p>Tap satu-satu ya, Queen Nella:</p>
+    <div class="proms">
+      <button class="prom">🙋 Izin dulu<small>Sebelum upload foto siapa pun, aku bakal tanya dan nunggu jawabannya.</small></button>
+      <button class="prom">🔒 Jaga batas<small>Privasi Queen Nella itu penting. Aku gak akan nyentuh itu lagi.</small></button>
+      <button class="prom">🧠 Mikir dulu<small>Gak cuma ikut gemes. Aku bakal mikir dampaknya buat orang lain.</small></button>
+    </div>
+  </div>
+
+  <div class="paper mine sec" style="text-align:center">
+    <p class="script" style="font-size:26px;color:var(--deep)">Maafin aku ya, Queen Nella? 🥹</p>
+    <p style="font-size:16px">Gak ada paksaan kok. Jawab sesuai yang Queen Nella rasain aja.</p>
+    <div class="btns">
+      <button class="btn" id="yes">Iya, dimaafin 💗</button>
+      <button class="btn soft" id="wait">Aku butuh waktu 🌷</button>
+    </div>
+    <p class="reply" id="reply" aria-live="polite"></p>
+    <p class="sign script">— Nuufu 🧸</p>
+  </div>
+</main>
+
+<script>
+// background floaters
+(function(){var f=document.getElementById('fl'),e=['💗','🌸','⭐','🎀','☁️','🌷'];
+for(var i=0;i<16;i++){var s=document.createElement('span');s.textContent=e[i%e.length];s.style.left=Math.random()*100+'%';s.style.fontSize=(16+Math.random()*20)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*14)+'s';f.appendChild(s)}})();
+
+// loading
+var msgs=['Lagi nyiapin sesuatu buat Queen Nella 🎀','Ngelipet amplopnya pelan-pelan 💌','Nambahin hiasan lucu 🌸','Hampir selesai... 🧸'],p=0,fill=document.getElementById('fill'),lt=document.getElementById('ltxt');
+var t=setInterval(function(){p+=Math.random()*14+6;if(p>=100){p=100;clearInterval(t);setTimeout(function(){show('envScreen')},500)}
+fill.style.width=p+'%';lt.textContent=msgs[Math.min(3,Math.floor(p/26))]},380);
+function show(id){['loading','envScreen','letter'].forEach(function(x){document.getElementById(x).classList.toggle('hide',x!==id)});window.scrollTo(0,0)}
+
+// burst of emoji
+function burst(x,y,set,n){for(var i=0;i<n;i++){var b=document.createElement('span');b.className='pop';b.textContent=set[i%set.length];b.style.left=x+'px';b.style.top=y+'px';b.style.setProperty('--x',(Math.random()*240-120)+'px');document.body.appendChild(b);setTimeout(function(el){el.remove()}.bind(null,b),1200)}}
+
+// envelope
+var env=document.getElementById('env');
+env.addEventListener('click',function(){if(env.classList.contains('open'))return;env.classList.add('open');var r=env.getBoundingClientRect();burst(r.left+r.width/2,r.top+r.height/2,['💗','🌸','⭐','🎀'],10);
+setTimeout(function(){show('letter');io()},1200)});
+
+// reveal sections on scroll
+function io(){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');o.unobserve(e.target)}})},{threshold:.15});document.querySelectorAll('.sec').forEach(function(s){o.observe(s)})}
+
+// promises
+document.querySelectorAll('.prom').forEach(function(b){b.addEventListener('click',function(ev){b.classList.toggle('on');if(b.classList.contains('on'))burst(ev.clientX,ev.clientY,['💗','✨'],4)})});
+
+// answers
+var reply=document.getElementById('reply');
+document.getElementById('yes').addEventListener('click',function(ev){reply.textContent='Makasih banyak, Queen Nella 🥹💗 Aku lega banget. Aku bakal jaga janjiku.';
+var w=innerWidth;for(var k=0;k<5;k++)burst(w*(k+1)/6,innerHeight*.6,['🎉','💗','🌸','⭐','🎀'],6)});
+document.getElementById('wait').addEventListener('click',function(ev){reply.textContent='Gak apa-apa, Queen Nella 🌷 Ambil waktu sebanyak yang Queen Nella butuh. Aku ngerti, dan sekali lagi, maaf ya.';burst(ev.clientX,ev.clientY,['🌷','☁️'],5)});
+</script>
+</body>
+</html>
